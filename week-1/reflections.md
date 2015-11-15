@@ -33,3 +33,36 @@ A shell or bash is a command line interface that allows users to manage and inve
 -help manual for commands
 
 ### 1.4 Forking and Cloning Reflection
+
+Creating New Repo
+
+  1. log into your Github profile at https://github.com/ (Links to an external site.)
+
+  2. Click the “+” icon next to your profile picture on the top right-hand corner
+
+  3. Click New Repository
+
+Fork a Repo
+
+  1. When you are at the specific repository page, click the “Fork” icon in the upper right-hand corner
+
+  2. Choose your profile to fork to, if necessary
+
+  3. Wait a couple of seconds, then done!
+
+Clone a Repo
+
+  1. When you are at the specific repository, look for the “HTTPS clone URL” link near the bottom right-hand corner.
+
+  2. Copy the link, or click the clipboard icon
+
+  3. Go to command line
+
+  4. go to the directory you would like to clone to
+
+  5. type 
+    git clone “copy the link here”
+
+The reason for forking a repository is to review and possibly modify one that has already been made as opposed to creating a new one from scratch.
+
+I received an error using the “git clone” command because I was using the “$” symbol in front if the command as seen from the video. Thinking that maybe I didn’t install Git correctly, I tried installing a separate application for Github. When it didn’t fix the problem, I started looking back at the video to make sure I was following directions correctly. I noticed that the instructors command profile looked differently than mine and the “$” was not part of the command. PROBLEM SOLVED! I’m learning to pay more attention to instructions and that everyones terminal may look different.
