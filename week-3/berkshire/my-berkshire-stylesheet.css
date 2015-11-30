@@ -1,0 +1,68 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:300;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: gray;
+    width:80%;
+    margin:auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Bree Serif', serif;
+    color: black;
+}
+
+.top01 {
+    width:500px;
+    border:0px;
+    padding: 0px;
+    margin:auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.link_col_left {
+    width:45%;
+    float:left;
+    margin:auto;
+}
+
+.link_col_right {
+    width:45%;
+    float:right;
+    margin:auto;
+}
+
+ul {
+    line-height: 30px;
+}
+
+a:hover {
+    color:#CC0000;
+}
+
+.div_hr {
+    width: 100%;
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background:gray;
+    clear:both;
+}
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+  - It is important to know that the linking the external file can make changes to your html. In this case, a stylesheet may change the entire appearance of your page.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+  - We mainly used properties like float  and clear to get the site to look like we wanted. It was a little difficult agreeing on what the site should look like, but in the end it worked out.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+  - Width, height, margin, padding, color, background
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+  - We mainly used classes. This was the choice that my partner wanted to go with and I was curious to see the outcome.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+  - I think the actual sites code was cleaner, probably because of our limited knowledge.
+*/
