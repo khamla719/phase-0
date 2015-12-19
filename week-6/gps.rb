@@ -32,8 +32,18 @@ p serving_size_calc("cookie", 10)
 p serving_size_calc("THIS IS AN ERROR", 5)
 
 
-# Think about where to keep the left-overs. Think about the scope of leftovers, may need to create extra variables line 17
 
 #  Reflection
 
 
+What did you learn about making code readable by working on this challenge?
+  - I learned that when you pseudocode correctly, it is easier to accomplish what you want, and also easier to read.
+
+Did you learn any new methods? What did you learn about them?
+  - I didn't learn an new methods, but I did have to refresh my memory about how the modulo works.
+
+What did you learn about accessing data in hashes?
+  - Basically, just reinforced some previously learned knowledge about how to access hashes and using the method has_key? to search for keys in the hash.
+
+What concepts were solidified when working through this challenge?
+  - the concept of the modulo and methods to iterate through a hash.
