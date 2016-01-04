@@ -46,3 +46,14 @@ console.log(separateComma(1234567));
 
 
 // Reflection
+What was it like to approach the problem from the perspective of JavaScript? Did you approach the problem differently?
+  - the approach itself was not much different. We started with Pseudocode and went from there.
+
+What did you learn about iterating over arrays in JavaScript?
+  - only that we had to use a loop instead of a method like "each".
+
+What was different about solving this problem in JavaScript?
+  - the syntax was different, but the logic was basically the same.
+
+What built-in methods did you find to incorporate in your refactored solution?
+  - did not get a chance to research refactored methods.
