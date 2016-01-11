@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
-// This challenge took me [#] hours.
+// I worked on this challenge with: Khamla Phimmachack
+// This challenge took me [4] hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -87,19 +87,32 @@ for (var voter in votes) {
    if (votes.hasOwnProperty(voter)) {
       var voteCast = votes[voter];
       for (var office in voteCast) {
-         if (voteCast.hasOwnProperty(office)) {
-           if (office === "president") {
-           var vote = voteCast[office];
-           if (voteCount.president.hasOwnProperty(vote)) {
-              voteCount.president[vote] += 1;
-              }
-            }
-         }
+         var name = votes[voter][office];
+      if (voteCount[office].hasOwnProperty(name)) {
+        voteCount[office][name] ++;
+      } else {
+        voteCount[office][name] = 1;
       }
-   }
-}
+    }
+  }
+};
 
+for (var office in voteCount)
+  if (voteCount.hasOwnProperty(office)) {
+    var count = voteCount[office];
+    var leader = "";
+    var leaderTally = 0;
+    for (var name in count)
+      if (count.hasOwnProperty(name)) {
+        if (count[name] > leaderTally) {
+          leaderTally = count[name];
+          leader = name;
+        }
+      }
+    officers[office] = leader;
+  };
 
+console.log(officers)
 // __________________________________________
 // Refactored Solution
 
@@ -110,16 +123,28 @@ for (var voter in votes) {
 
 // __________________________________________
 // Reflection
+/*
+What did you learn about iterating over nested objects in JavaScript?
 
+I learned that iterating over nested objects in JavaScript can be very confusing and hard to keep track
+of which object you are iterating over. It was tough to manage so many different properties, but after a ton of
+trial and error I feel more confident using the for...in iteration method which I had never used before.
 
+Were you able to find useful methods to help you with this?
 
+I did not find many other methods to use other then the .hasOwnProperty method which was included in the linked
+stack overflow article in the directions.
 
+What concepts were solidified in the process of working through this challenge?
 
+Working through this challenge the concept of properly accessing elements within a nested hash was solidified.
+Although I still find it a bit hard to manage and keep track of, I do feel more confident than I did going into
+the challenge.
 
+*/
 // __________________________________________
 // Test Code:  Do not alter code below this line.
 
-/*
 function assert(test, message, test_number) {
   if (!test) {
     console.log(test_number + "false");
@@ -176,4 +201,3 @@ assert(
   "Ivy should be elected Treasurer.",
   "8. "
 )
-*/
