@@ -66,7 +66,11 @@ var officers = {
 
 // Pseudocode
 // - iterate over the votes object using the for in loop,
+<<<<<<< HEAD
+//   for (var voter in votes) {}
+=======
 //   for (var voter in votes) {
+>>>>>>> origin/master
 //     for (var i=0; i < voter.length; i++)
 //   }
 //   set var voteCast equal to votes[voter]

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // # Method to create a list
 // # input: string of items separated by spaces (example: "carrots apples cereal pizza")
 // # steps:
@@ -60,3 +61,9 @@ removeItem(groceryList, 'oranges');
 updateItem(groceryList, 'bananas', 6);
 
 printList(groceryList);
+=======
+function newList() {
+  for(i = 0; i < arguments.length; i++)
+
+}
+>>>>>>> master
